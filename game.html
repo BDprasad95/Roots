@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Play game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+    <style type="text/css">
+        #round{
+            height: 50px;
+            width: 50px;
+            background-color: black;
+            border-radius:50%;
+            
+            text-align: center;
+            line-height:2.5;
+        }
+      
+       
+    </style>
+    
+    <script type="text/javascript">
+        function check1(){
+            
+            var a = document.getElementById("b1").innerHTML;
+            document.getElementById("one2").innerHTML = a;
+        }
+        function check2(){
+            var b = document.getElementById("b2").innerHTML;
+            document.getElementById("one1").innerHTML = b;
+            
+        }
+        function check3(){
+            var c = document.getElementById("b3").innerHTML;
+            document.getElementById("one7").innerHTML = c;
+            
+        }
+        function check4(){
+            var d = document.getElementById("b4").innerHTML;
+            document.getElementById("one4").innerHTML = d;
+            
+        }
+        function check5(){
+            var e = document.getElementById("b5").innerHTML;
+            document.getElementById("one5").innerHTML = e;
+            
+        }function check6(){
+            var f = document.getElementById("b6").innerHTML;
+            document.getElementById("one9").innerHTML = f;
+            
+        }
+        function check7(){
+            var g = document.getElementById("b7").innerHTML;
+            document.getElementById("one3").innerHTML = g;
+            
+        }
+        function check8(){
+            var h = document.getElementById("b8").innerHTML;
+            document.getElementById("one8").innerHTML = h;
+            
+        }
+        function check9(){
+            var i = document.getElementById("b9").innerHTML;
+            document.getElementById("one6").innerHTML = i;
+            
+        }
+        
+        function fine(){
+            var alp = document.getElementById("ai").value;
+            var x ="ABCDEFGHI";
+            if(alp!= "ABCDEFGHIJKLMNOPQRSTUVWXYZ"){
+                alert("Enter Alphabatic (A-Z)");
+                return false;
+               
+            }
+            else{
+                window.alert("GOOD");
+                return true;
+            }
+           
+        }
+       
+    </script>
+    <!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="bg-danger">
+    
+    <div class="container mt-5">
+     <div class="text-center text-light"><h2 style="font-family: serif;">ROOTS</h2><i class="fas fa-leaf"></i></div>
+    
+        
+      
+        <div class="container bg-light rounded">
+            
+        <h5 class="text-light mx-auto d-block mt-5" id="round">1</h5>
+            
+            <span class="text-dark" style="font-size: 20px;font-family: serif"><h5 class="text-center">A B C D E F G H I</h5></span>
+        
+            <div class="alert  col-sm-5 text-center mt-2 mx-auto d-block">
+            
+            <span class="btn-group  text-light">
+                <button type="button" class="btn btn-danger" id="one1"></button><button type="button" class="btn btn-danger" id="one2"></button><button type="button" class="btn btn-danger" id="one3"></button><button type="button" class="btn btn-danger" id="one4"></button><button type="button" class="btn btn-danger" id="one5"></button><button type="button" class="btn btn-danger" id="one6"></button><button type="button" class="btn btn-danger" id="one7"></button><button type="button" class="btn btn-danger" id="one8"></button><button type="button" class="btn btn-danger" id="one9"></button>
+                </span>
+       
+            </div>
+                
+            <div class="alert col-sm-5 text-center mt-2 mx-auto d-block">
+            
+                <span>
+                    <button type="button" class="btn btn-info" id="b1"  onclick="check1()">B</button>
+                    <button type="button" class="btn btn-info" id="b2"  onclick="check2()">A</button>
+                    <button type="button" class="btn btn-info" id="b3"  onclick="check3()">G</button>
+                    <button type="button" class="btn btn-info" id="b4"  onclick="check4()">D</button>
+                    <button type="button" class="btn btn-info" id="b5"  onclick="check5()">E</button>
+                    <button type="button" class="btn btn-info" id="b6"  onclick="check6()">I</button>
+                    <button type="button" class="btn btn-info" id="b7"  onclick="check7()">C</button>
+                    <button type="button" class="btn btn-info" id="b8"  onclick="check8()">H</button>
+                    <button type="button" class="btn btn-info" id="b9"  onclick="check9()">F</button>
+                </span>
+            </div>
+        </div>
+        <div class="container bg-light rounded">
+            
+        <h5 class="text-light mx-auto d-block mt-5" id="round">2</h5>
+            
+            <span class="text-dark" style="font-size: 20px;font-family: serif"><h5 class="text-center">ENTER A to Z</h5></span>
+        
+            <div class="alert  col-sm-5 text-center mt-2 mx-auto d-block">
+            
+           <form>
+                <input type="text" id="ai" placeholder="A to I" class="form-control" required>
+                <button type="submit" class="btn btn-info mt-3" onclick="fine()">CHECK</button>
+                </form>
+                   </div>
+        </div>
+      
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</body>
+</html>
