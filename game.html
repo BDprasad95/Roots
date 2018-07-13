@@ -84,6 +84,51 @@
             }
            
         }
+	
+	function number1(){
+            
+            var a = document.getElementById("n1").innerHTML;
+            document.getElementById("nine").innerHTML = a;
+        }
+        function number2(){
+            var b = document.getElementById("n2").innerHTML;
+            document.getElementById("two").innerHTML = b;
+            
+        }
+        function number3(){
+            var c = document.getElementById("n3").innerHTML;
+            document.getElementById("seven").innerHTML = c;
+            
+        }
+        function number4(){
+            var d = document.getElementById("n4").innerHTML;
+            document.getElementById("four").innerHTML = d;
+            
+        }
+        function number5(){
+            var e = document.getElementById("n5").innerHTML;
+            document.getElementById("five").innerHTML = e;
+            
+        }function number6(){
+            var f = document.getElementById("n6").innerHTML;
+            document.getElementById("six").innerHTML = f;
+            
+        }
+        function number7(){
+            var g = document.getElementById("n7").innerHTML;
+            document.getElementById("three").innerHTML = g;
+            
+        }
+        function number8(){
+            var h = document.getElementById("n8").innerHTML;
+            document.getElementById("eight").innerHTML = h;
+            
+        }
+        function number9(){
+            var i = document.getElementById("n9").innerHTML;
+            document.getElementById("one").innerHTML = i;
+            
+        }
        
     </script>
     <!--[if IE]>
@@ -140,7 +185,37 @@
                 <input type="text" id="ai" placeholder="A to I" class="form-control" required>
                 <button type="submit" class="btn btn-info mt-3" onclick="fine()">CHECK</button>
                 </form>
-                   </div>
+              </div>
+        </div>
+
+	<div class="container bg-light rounded">
+         <h5 class="text-light mx-auto d-block mt-5" id="round">3</h5>
+            
+            <span class="text-dark" style="font-size: 20px;font-family: serif"><h5 class="text-center">
+            Follow the order 1 2 3 4 5 6 7 8 9</h5></span>
+        
+            <div class="alert  col-sm-5 text-center mt-2 mx-auto d-block">
+             <span>
+                <button type="button" class="btn btn-danger" id="one"></button><button type="button" class="btn btn-danger" id="two"></button><button type="button" class="btn btn-danger" id="three"></button><button type="button" class="btn btn-danger" id="four"></button><button type="button" class="btn btn-danger" id="five"></button><button type="button" class="btn btn-danger" id="six"></button><button type="button" class="btn btn-danger" id="seven"></button><button type="button" class="btn btn-danger" id="eight"></button><button type="button" class="btn btn-danger" id="nine"></button>
+                </span>
+            </div>
+           
+                
+            <div class="alert col-sm-5 text-center mt-2 mx-auto d-block">
+            
+                <span>
+                    <button type="button" class="btn btn-info" id="n1"  onclick="number1()">9</button>
+                    <button type="button" class="btn btn-info" id="n2"  onclick="number2()">2</button>
+                    <button type="button" class="btn btn-info" id="n3"  onclick="number3()">7</button>
+                    <button type="button" class="btn btn-info" id="n4"  onclick="number4()">4</button>
+                    <button type="button" class="btn btn-info" id="n5"  onclick="number5()">5</button>
+                    <button type="button" class="btn btn-info" id="n6"  onclick="number6()">6</button>
+                    <button type="button" class="btn btn-info" id="n7"  onclick="number7()">3</button>
+                    <button type="button" class="btn btn-info" id="n8"  onclick="number8()">8</button>
+                    <button type="button" class="btn btn-info" id="n9"  onclick="number9()">1</button>
+                </span>
+            </div>
+            
         </div>
       
     </div>
