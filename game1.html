@@ -10,7 +10,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
+	 <script src="js/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+    window.sr =   ScrollReveal({ reset: true });
+    </script>
     <style type="text/css">
         #round{
             height: 50px;
@@ -68,7 +72,7 @@
     
         
       
-        <div class="container bg-light rounded">
+        <div class="anim container bg-light rounded">
             
             <h5 class="text-light mx-auto d-block mt-5" id="round">1</h5>
             
@@ -85,7 +89,7 @@
                 
          </div>
         
-        <div class="container bg-light rounded">
+        <div class="anim container bg-light rounded">
             
             <h5 class="text-light mx-auto d-block mt-5" id="round">2</h5>
             
@@ -102,6 +106,11 @@
                 
          </div>
     </div>
+	<script>
+    sr.reveal('.anim',{rotate:{x:100,y:100,z:0}, duration:500});
+        
+    </script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
 </body>
