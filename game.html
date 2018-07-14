@@ -133,6 +133,35 @@
             document.getElementById("one").innerHTML = i;
             
         }
+
+	 function p1(){
+           var a = document.getElementById("B").innerHTML;
+           document.getElementById("c1").innerHTML = a;
+           document.getElementById("gone1").style.display = 'none';
+           
+       }
+        function p2(){
+             var b = document.getElementById("D").innerHTML;
+           document.getElementById("c2").innerHTML = b;
+            document.getElementById("gone").style.display = "block";
+            document.getElementById("gone1").style.display = 'none';
+            
+        }
+          
+           function p3(){
+           var c = document.getElementById("F").innerHTML;
+           document.getElementById("c3").innerHTML = c;
+            document.getElementById("gone").style.display = "block";
+            document.getElementById("gone1").style.display = "none";
+       }
+        function no1(){
+            document.getElementById("w1").style.display = 'none';
+            document.getElementById("gone1").style.display = "block";
+        }
+        function no2(){
+            document.getElementById("w2").style.display = 'none';
+            document.getElementById("gone1").style.display = "block";
+        }
        
     </script>
     <!--[if IE]>
@@ -177,19 +206,26 @@
                 </span>
             </div>
         </div>
-        <div class="anim container bg-light rounded">
+        
+	 <div class="anim container bg-light rounded">
+            <h5 class="text-light mx-auto d-block mt-5" id="round">2</h5>
             
-        <h5 class="text-light mx-auto d-block mt-5" id="round">2</h5>
-            
-            <span class="text-dark" style="font-size: 20px;font-family: serif"><h5 class="text-center">ENTER A to Z</h5></span>
+            <span class="text-dark" style="font-size: 20px;font-family: serif"><h5 class="text-center mt-5">
+                WHICH ONE IS NEXT
+                </h5></span>
         
             <div class="alert  col-sm-5 text-center mt-2 mx-auto d-block">
-            
-           <form>
-                <input type="text" id="ai" placeholder="A to I" class="form-control" required>
-                <button type="submit" class="btn btn-info mt-3" onclick="fine()">CHECK</button>
-                </form>
-              </div>
+                <span><h1>A <button type="button" class="btn btn-sm" id="c1"></button> C  <button type="button" class="btn btn-sm" id="c2"></button> E  <button type="button" class="btn btn-sm" id="c3"></button></h1></span>
+          <span>
+                 <button type="button" class="btn btn-info btn-sm" id="B" onclick="p1()"><h4>B</h4></button>
+                 <button type="button" class="btn btn-info btn-sm" id="w1" onclick="no1()"><h4>G</h4></button>
+                 <button type="button" class="btn btn-info btn-sm" id="D" onclick="p2()"><h4>D</h4></button>
+                 <button type="button" class="btn btn-info btn-sm" id="w2" onclick="no2()"><h4>H</h4></button>
+                 <button type="button" class="btn btn-info btn-sm" id="F" onclick="p3()"><h4>F</h4></button>
+                </span>
+                
+                   </div>
+            <div class="round text-center"> <i class="fas fa-check" id="gone"></i> <i class="fas fa-times" id="gone1"></i>  </div> 
         </div>
 
 	<div class="anim container bg-light rounded">
