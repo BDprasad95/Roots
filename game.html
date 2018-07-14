@@ -168,6 +168,27 @@
             document.getElementById("gone1").style.display = "block";
 		 document.getElementById("gone").style.display = 'none';
         }
+	
+	 }
+        function dnt(){
+           
+            document.getElementById("sry").style.display = 'none';
+        }
+        function dnt1(){
+           
+            document.getElementById("sry1").style.display = 'none';
+        }
+        function dnt2(){
+           
+            document.getElementById("sry2").style.display = 'none';
+        }
+        function yes(){
+           
+            document.getElementById("cor").style.backgroundColor = 'green'
+            document.getElementById("sry").style.display = 'none';
+            document.getElementById("sry1").style.display = 'none';
+            document.getElementById("sry2").style.display = 'none';
+        }
        
     </script>
     <!--[if IE]>
@@ -187,7 +208,7 @@
             
         <h5 class="text-light mx-auto d-block mt-5" id="round">1</h5>
             
-            <span class="text-dark" style="font-size: 20px;font-family: serif"><h5 class="text-center">A B C D E F G H I</h5></span>
+            <span class="text-dark" style="font-size: 20px;font-family: serif"><h5 class="text-center mt-5">A B C D E F G H I</h5></span>
         
             <div class="alert  col-sm-5 text-center mt-2 mx-auto d-block">
             
@@ -237,7 +258,7 @@
 	<div class="anim container bg-light rounded">
          <h5 class="text-light mx-auto d-block mt-5" id="round">3</h5>
             
-            <span class="text-dark" style="font-size: 20px;font-family: serif"><h5 class="text-center">
+            <span class="text-dark" style="font-size: 20px;font-family: serif"><h5 class="text-center mt-5">
             Follow the order 1 2 3 4 5 6 7 8 9</h5></span>
         
             <div class="alert  col-sm-5 text-center mt-2 mx-auto d-block">
@@ -262,6 +283,19 @@
                 </span>
             </div>
             
+        </div>
+
+	 <div class="anim container bg-light rounded mb-2">
+            <h5 class="text-light mx-auto d-block mt-5" id="round">4</h5>
+            
+            <span class="text-dark" style="font-size: 20px;font-family: serif"><h5 class="text-center mt-5">
+               HOW MANY BALLS HERE ?
+                </h5></span>
+            <div class="round text-center">
+                <span><i class="far fa-futbol fa-2x"></i><i class="far fa-futbol fa-2x"></i><i class="far fa-futbol fa-2x"></i><i class="far fa-futbol fa-2x"></i><i class="far fa-futbol fa-2x"></i></span>
+                
+                <div class="alert mt-5"><span><button type="button" class="btn btn-info" id="sry" onclick="dnt()">3</button> <button type="button" class="btn btn-info" id="sry1" onclick="dnt1()">4</button> <button type="button" class="btn btn-info" id="sry2" onclick="dnt2()">2</button> <button type="button" class="btn btn-info" id="cor" onclick="yes()">5</button> </span> </div>
+                    </div>
         </div>
       
     </div>
