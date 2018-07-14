@@ -140,6 +140,7 @@
 	 function p1(){
            var a = document.getElementById("B").innerHTML;
            document.getElementById("c1").innerHTML = a;
+		document.getElementById("gone").style.display = 'block';
            document.getElementById("gone1").style.display = 'none';
            
        }
@@ -160,10 +161,12 @@
         function no1(){
             document.getElementById("w1").style.display = 'none';
             document.getElementById("gone1").style.display = "block";
+ 		document.getElementById("gone").style.display = 'none';
         }
         function no2(){
             document.getElementById("w2").style.display = 'none';
             document.getElementById("gone1").style.display = "block";
+		 document.getElementById("gone").style.display = 'none';
         }
        
     </script>
