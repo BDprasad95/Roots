@@ -56,6 +56,36 @@
         document.getElementById("two3").style.display = 'none';
        
     }
+
+	  function mul1(){
+        document.getElementById("into").style.display = 'none';
+       
+    }
+         function mul2(){
+        document.getElementById("into2").style.backgroundColor = 'blue';
+        document.getElementById("into").style.display = 'none';
+             document.getElementById("into3").style.display = 'none';
+       
+    }
+         function mul3(){
+        document.getElementById("into3").style.display = 'none';
+       
+    }
+         function bal1(){
+        document.getElementById("ball2").style.display = 'none';
+        document.getElementById("ball1").style.backgroundColor = 'blue';
+        document.getElementById("ball3").style.display = 'none';
+        
+    }
+         function bal2(){
+       document.getElementById("ball2").style.display = 'none';
+       
+       
+    }
+         function bal3(){
+        document.getElementById("ball3").style.display = 'none';
+       
+    }
         
         
     </script>
@@ -76,7 +106,7 @@
             
             <h5 class="text-light mx-auto d-block mt-5" id="round">1</h5>
             
-            <span class="text-dark" style="font-size: 20px;font-family: serif"><h5 class="text-center">
+            <span class="text-dark" style="font-size: 20px;font-family: serif"><h5 class="text-center mt-5">
             Solve the problem (+)</h5></span>
         
             <div class="alert  col-sm-5 text-center mt-2 mx-auto d-block">
@@ -93,7 +123,7 @@
             
             <h5 class="text-light mx-auto d-block mt-5" id="round">2</h5>
             
-            <span class="text-dark" style="font-size: 20px;font-family: serif"><h5 class="text-center">
+            <span class="text-dark" style="font-size: 20px;font-family: serif"><h5 class="text-center mt-5">
             Solve the problem (-)</h5></span>
         
             <div class="alert  col-sm-5 text-center mt-2 mx-auto d-block">
@@ -101,6 +131,41 @@
             <span>
                <button type="button" class="btn btn-danger" id="two" onclick="num1()">0</button><button type="button" class="btn btn-danger" id="two2" onclick="num2()">1</button><button type="button" class="btn btn-danger" id="two3" onclick="num3()">3</button>
                 </span>
+       
+            </div>
+                
+         </div>
+
+	<div class="anim container bg-light rounded">
+            
+            <h5 class="text-light mx-auto d-block mt-5" id="round">3</h5>
+            
+            <span class="text-dark" style="font-size: 20px;font-family: serif"><h5 class="text-center mt-5">
+            Solve the problem (x)</h5></span>
+        
+            <div class="alert  col-sm-5 text-center mt-2 mx-auto d-block">
+            <span><h3>10 x 2 = ?</h3></span>
+            <span>
+               <button type="button" class="btn btn-danger" id="into" onclick="mul1()">10</button><button type="button" class="btn btn-danger" id="into2" onclick="mul2()">20</button><button type="button" class="btn btn-danger" id="into3" onclick="mul3()">15</button>
+                </span>
+       
+            </div>
+                
+         </div>
+        
+         
+         <div class="anim container bg-light rounded">
+            
+            <h5 class="text-light mx-auto d-block mt-5" id="round">4</h5>
+            
+            <span class="text-dark" style="font-size: 20px;font-family: serif"><h5 class="text-center mt-5">
+            HOW MANY BALLS AND PENS HERE ?</h5></span>
+        
+            <div class="alert  col-sm-5 text-center mt-2 mx-auto d-block">
+            <span><i class="far fa-futbol fa-2x"></i> <i class="fas fa-pencil-alt fa-2x"></i><i class="far fa-futbol fa-2x"></i> <i class="fas fa-pencil-alt fa-2x"></i><i class="far fa-futbol fa-2x"></i> <i class="fas fa-pencil-alt fa-2x"></i><i class="far fa-futbol fa-2x"></i> <i class="fas fa-pencil-alt fa-2x"></i></span>
+            <div class="alert">
+               <button type="button" class="btn btn-danger" id="ball1" onclick="bal1()">4 | 4</button><button type="button" class="btn btn-danger" id="ball2" onclick="bal2()">3 | 4</button><button type="button" class="btn btn-danger" id="ball3" onclick="bal3()">4 | 5</button>
+                </div>
        
             </div>
                 
