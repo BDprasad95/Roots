@@ -87,6 +87,60 @@
         document.getElementById("ball3").style.display = 'none';
        
     }
+
+
+         function multi1(){
+        document.getElementById("e1").style.display = 'none';
+       
+        
+    }
+         function multi2(){
+        document.getElementById("e1").style.display = 'none';
+        document.getElementById("e2").style.backgroundColor = 'blue';
+        document.getElementById("e3").style.display = 'none';
+       
+       
+    }
+         function multi3(){
+        document.getElementById("e3").style.display = 'none';
+       
+    }
+        
+        function adsu1(){
+        document.getElementById("bo1").style.display = 'none';
+       
+        
+    }
+         function adsu2(){
+        document.getElementById("bo2").style.display = 'none';
+       
+       
+       
+    }
+         function adsu3(){
+        document.getElementById("bo1").style.display = 'none';
+        document.getElementById("bo3").style.backgroundColor = 'blue';
+        document.getElementById("bo2").style.display = 'none';
+       
+    }
+        
+        function divi1(){
+        document.getElementById("di1").style.backgroundColor = 'blue';
+        document.getElementById("di3").style.display = 'none';
+        document.getElementById("di2").style.display = 'none';  
+        
+    }
+         function divi2(){
+        document.getElementById("di2").style.display = 'none';
+       
+       
+       
+    }
+         function divi3(){
+        document.getElementById("di3").style.display = 'none';
+        
+       
+    }
         
         
     </script>
@@ -160,10 +214,26 @@
                 
          </div>
         
+	 <div class="anim container bg-light rounded">
+            
+            <h5 class="text-light mx-auto d-block mt-5" id="round">4</h5>
+            
+            <span class="text-dark" style="font-size: 20px;font-family: serif"><h5 class="text-center mt-5">
+            Solve the problem (+)</h5></span>
+        
+            <div class="alert  col-sm-5 text-center mt-2 mx-auto d-block">
+            <span><h3>5 + 2 + 6 = ?</h3></span>
+            <span>
+               <button type="button" class="btn btn-danger" id="e1" onclick="multi1()">11</button><button type="button" class="btn btn-danger" id="e2" onclick="multi2()">13</button><button type="button" class="btn btn-danger" id="e3" onclick="multi3()">15</button>
+                </span>
+       
+            </div>
+                
+         </div>
          
          <div class="anim container bg-light rounded">
             
-            <h5 class="text-light mx-auto d-block mt-5" id="round">4</h5>
+            <h5 class="text-light mx-auto d-block mt-5" id="round">5</h5>
             
             <span class="text-dark" style="font-size: 20px;font-family: serif"><h5 class="text-center mt-5">
             HOW MANY BALLS AND PENS HERE ?</h5></span>
@@ -173,6 +243,41 @@
             <div class="alert">
                <button type="button" class="btn btn-danger" id="ball1" onclick="bal1()">4 | 4</button><button type="button" class="btn btn-danger" id="ball2" onclick="bal2()">3 | 4</button><button type="button" class="btn btn-danger" id="ball3" onclick="bal3()">4 | 5</button>
                 </div>
+       
+            </div>
+                
+         </div>
+
+	 <div class="anim container bg-light rounded">
+            
+            <h5 class="text-light mx-auto d-block mt-5" id="round">6</h5>
+            
+            <span class="text-dark" style="font-size: 20px;font-family: serif"><h5 class="text-center mt-5">
+            Solve the problem (+ / -)</h5></span>
+        
+            <div class="alert  col-sm-5 text-center mt-2 mx-auto d-block">
+            <span><h3>5 + 6 - 4 + 2 = ?</h3></span>
+            <span>
+               <button type="button" class="btn btn-danger" id="bo1" onclick="adsu1()">10</button><button type="button" class="btn btn-danger" id="bo2" onclick="adsu2()">7</button><button type="button" class="btn btn-danger" id="bo3" onclick="adsu3()">9</button>
+                </span>
+       
+            </div>
+                
+         </div>
+        
+        
+          <div class="anim container bg-light rounded">
+            
+            <h5 class="text-light mx-auto d-block mt-5" id="round">7</h5>
+            
+            <span class="text-dark" style="font-size: 20px;font-family: serif"><h5 class="text-center mt-5">
+            Solve the problem (/)</h5></span>
+        
+            <div class="alert  col-sm-5 text-center mt-2 mx-auto d-block">
+            <span><h3> 4 / 2 = ?</h3></span>
+            <span>
+               <button type="button" class="btn btn-danger" id="di1" onclick="divi1()">2</button><button type="button" class="btn btn-danger" id="di2" onclick="divi2()">0</button><button type="button" class="btn btn-danger" id="di3" onclick="divi3()">1</button>
+                </span>
        
             </div>
                 
