@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="">
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <style></style>
+	 <script src="js/scrollreveal.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+     window.sr =   ScrollReveal({ reset: true });
+    </script>
 
     <!--[if IE]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -19,7 +24,7 @@
 </head>
 
 <body class="bg-dark text-light">
-     <nav class="top navbar sticky-top navbar-expand-sm navbar-dark bg-info shadow p-2 mb-4 rounded">
+     <nav class="anim navbar sticky-top navbar-expand-sm navbar-dark bg-info shadow p-2 mb-4 rounded">
        <ul class="navbar-nav">
             <li class="nav-item"><a href="main.html" class="nav-link text-light"><i class="fas fa-chevron-left"></i> BACK</a> </li>
            
@@ -29,7 +34,7 @@
     
         <div class="container mt-5">
      <div class="text-center text-light"><h2 style="font-family: serif;">ROOTS</h2><i class="fas fa-leaf"></i></div>
-    <div class="row bg-danger shadow mb-4 p-2 rounded">
+    <div class="anim row bg-danger shadow mb-4 p-2 rounded">
     
     
     <div class="col-sm-12 bg-info" style="font-size:20px;text-align: center;">
@@ -37,11 +42,11 @@
         </div>
     <div class="col-sm-6 mx-auto d-block"> 
         <video class="embed-responsive shadow mb-4 p-2 mt-2" src="The_Crow_and_The_Snake___3D_Moral_Stories_For_Kids_in_English___Moral_Values_Sto.mp4" controls></video>
-        <div class="caption"><i class="fas fa-music"></i> ENGLISH</div>
+        <div class="anim caption"><i class="fas fa-music"></i> ENGLISH</div>
         </div>
     </div>
             
-             <div class="row bg-danger shadow mb-4 p-2 rounded">
+             <div class="anim row bg-danger shadow mb-4 p-2 rounded">
     
     
     <div class="col-sm-12 bg-info" style="font-size:20px;text-align: center;">
@@ -49,28 +54,28 @@
         </div>
     <div class="col-sm-6 mx-auto d-block"> 
         <video class="embed-responsive shadow mb-4 p-2 mt-2" src="No_Smiles_Today___Learn_English_(US)_with_subtitles_-_Story_for_Children__BookBo.mp4" controls></video>
-        <div class="caption"><i class="fas fa-music"></i> ENGLISH</div>
+        <div class="anim caption"><i class="fas fa-music"></i> ENGLISH</div>
         </div>
     </div>
             
-             <div class="row bg-danger shadow mb-4 p-2 rounded">
+             <div class="anim row bg-danger shadow mb-4 p-2 rounded">
     
     
     <div class=" col-sm-12 bg-info" style="font-size:20px;text-align: center;">
        Telivaina_topeela_varthakudu 
                  </div>
     <div class="col-md-6  mx-auto d-block"> <video class="embed-responsive shadow mb-4 p-2 mt-2" src="Telivaina_topeela_varthakudu___%E0%B0%85%E0%B0%AE%E0%B1%8D%E0%B0%AE%E0%B0%AE%E0%B1%8D%E0%B0%AE_%E0%B0%95%E0%B0%A5%E0%B0%B2%E0%B1%81___Telugu_Stories_for_kids____Grandma.mp4" controls></video> 
-        <div class="caption"><i class="fas fa-music"></i> TELUGU</div></div>
+        <div class="anim caption"><i class="fas fa-music"></i> TELUGU</div></div>
     </div>
             
-             <div class="row  bg-danger shadow mb-4 p-2 rounded">
+             <div class="anim row  bg-danger shadow mb-4 p-2 rounded">
     
     
     <div class="col-sm-12 bg-info" style="font-size:20px;text-align: center;">
         Rendu_kakulu__అమ్మమ్మ_కథలు
         </div>
     <div class="col-sm-6 mx-auto d-block"><video class="embed-responsive shadow mb-4 p-2 mt-2" src="Rendu_kakulu__%E0%B0%85%E0%B0%AE%E0%B1%8D%E0%B0%AE%E0%B0%AE%E0%B1%8D%E0%B0%AE_%E0%B0%95%E0%B0%A5%E0%B0%B2%E0%B1%81___Telugu_Stories_for_kids___Grandma_stories_in_Telugu.mp4" controls></video>
-        <div class="caption"><i class="fas fa-music"></i> TELUGU</div> </div>
+        <div class="anim caption"><i class="fas fa-music"></i> TELUGU</div> </div>
                  
     </div>
         </div>
@@ -78,7 +83,10 @@
         
         
     </div>
-
+	 <script>
+    sr.reveal('.anim',{origin:'right', duration:300});
+    
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 </body>
